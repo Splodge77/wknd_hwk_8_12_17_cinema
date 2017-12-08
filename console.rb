@@ -8,7 +8,14 @@ customer1 = Customer.new ({
   'funds' => '100'
   })
 
-customer1.save()
+ customer1.save()
+
+film1 = Film.new ({
+  'title' => 'Fantasia',
+  'price' => '10'
+  })
+
+  film1.save()
 
 
 binding.pry
