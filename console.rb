@@ -8,7 +8,7 @@ Customer.delete_all
 Film.delete_all
 
 customer1 = Customer.new ({
-  'name' => 'Mikey',
+  'name' => 'Mikeeeey',
   'funds' => '100'
   })
 
@@ -27,6 +27,9 @@ ticket1 = Ticket.new ({
   })
 
 ticket1.save
+
+customer1.name = 'Mickey'
+customer1.update
 
 binding.pry
 nil
