@@ -1,14 +1,17 @@
-require('pry-byebug')
 require_relative('models/customer')
 require_relative('models/film')
 require_relative('models/ticket')
+require('pry-byebug')
+
+Customer.delete_all
+
 
 customer1 = Customer.new ({
   'name' => 'Mikey',
   'funds' => '100'
   })
 
- customer1.save()
+customer1.save()
 
 film1 = Film.new ({
   'title' => 'Fantasia',
@@ -23,8 +26,6 @@ ticket1 = Ticket.new ({
   })
 
 ticket1.save
-
-
 
 binding.pry
 nil
