@@ -34,5 +34,4 @@ class Customer
     return result
   end
 
-
 end
