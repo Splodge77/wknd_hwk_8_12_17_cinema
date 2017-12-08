@@ -14,6 +14,13 @@ customer1 = Customer.new ({
 
 customer1.save()
 
+customer2 = Customer.new ({
+  'name' => 'Donald',
+  'funds' => '20'
+  })
+
+customer2.save()
+
 film1 = Film.new ({
   'title' => 'Fantasia',
   'price' => '10'
